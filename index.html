@@ -21,21 +21,16 @@
 
     <!-- javascript -->
     <script src="js/typed.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="./js/index.js"></script>
 
 </head>
 
 <body>
-<?php include('server.php')?>
     <header>
         <div class="sidenav">
-
             <img src="Images/profile.jpg" alt="" class="profile">
-
-
             <li class="nav-list">
-
-                <a href="#home"><span class="nav-menu-icon"><i class="fas fa-home"></i></span><span
+               <a href="#home"><span class="nav-menu-icon"><i class="fas fa-home"></i></span><span
                         class="nav-name">Home</span></a>
                 <hr>
                 <a href="#about"><span class="nav-menu-icon"><i class="fas fa-address-card"></i></span><span
@@ -119,20 +114,20 @@
                     <div class="category">
                         <ul>
                             <li class="list-item">
-                                <span class="title">Name</span><span class="value">Poojan Prajapati</span>
+                                <span class="info-title">Name</span><span class="value">Poojan Prajapati</span>
                             </li>
                             <li class="list-item">
-                                <span class="title">Age</span><span class="value">20 Years</span>
+                                <span class="info-title">Age</span><span class="value">20 Years</span>
                             </li>
                             <li class="list-item">
-                                <span class="title">Residence</span><span class="value">Ahmedabad,
+                                <span class="info-title">Residence</span><span class="value">Ahmedabad,
                                     Gujarat</span>
                             </li>
                             <li class="list-item">
-                                <span class="title">Email</span><span class="value">pra.poojan2000@gmail.com</span>
+                                <span class="info-title">Email</span><span class="value">pra.poojan2000@gmail.com</span>
                             </li>
                             <li class="list-item">
-                                <span class="title">Internship</span><span class="value"
+                                <span class="info-title">Internship</span><span class="value"
                                     style="font-style: italic;">Seeking for opportunity.</span>
                             </li>
                         </ul>
@@ -183,33 +178,6 @@
                         </div>
                     </div>
 
-                    <!-- <div class="col-2">
-                        <div class="service-item">
-                            <div class="service-icon" style="color: #3DDC84;">
-                                <i class="fab fa-android"></i>
-                            </div>
-                            <div class="service-name">
-                                <h5>Android Development</h5>
-                            </div>
-                        </div>
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fas fa-desktop"></i>
-                            </div>
-                            <div class="service-name">
-                                <h5>Web Development</h5>
-                            </div>
-                        </div>
-                        <div class="service-item">
-                            <div class="service-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <div class="service-name">
-                                <h5>Database Management</h5>
-                            </div>
-                        </div>
-                    </div> -->
-
                 </div>
             </div>
 
@@ -232,7 +200,7 @@
                 <div class="edu-projects">
 
                     <div class="education">
-                        <h1 class="heading">EDUCATION</h1>
+                        <h1 class="heading title">EDUCATION</h1>
                         <div class="edu">
                             <div class="clg">
                                 <div class="details">
@@ -270,7 +238,7 @@
                     </div>
 
                     <div class="projects">
-                        <h1 class="heading">Projects</h1>
+                        <h1 class="heading title">Projects</h1>
                         <ul class="project-section">
                             <li class="allprojects">
                                 <div class="link">
@@ -306,84 +274,47 @@
                     <div class="resume-data">
                         <span class="resume-icon"><i class="fas fa-file"></i></span>
                         <!-- <a href="/Images/data/resume.pdf" target="_blank" style="text-decoration: none;"> -->
-                        <h2 class="resumetxt" onclick="resume()">Resume</h2></a>
+                        <h2 class="resumetxt title" onclick="resume()">Resume</h2></a>
                     </div>
 
                 </div>
 
                 <div class="coding-skills">
                     <div class="heading">
-                        <h3>Skills</h3>
+                        <h3 class="title">Skills</h3>
                         <img src="./Images/coding-skills.png" alt="coding-skills">
                     </div>
 
                     <div class="tech">
-                        <span class="badge">JAVA</span>
-                        <span class="badge">Python</span>
-                        <span class="badge">C</span>
-                        <span class="badge">HTML</span>
-                        <span class="badge">CSS</span>
-                        <span class="badge">Android Development</span>
-                        <span class="badge">Flutter</span>
-                    </div>
-
-
-                    <!-- <div class="skill-item">
-                        <h4 class="progress-title">Java</h4>
-                        <div class="progress">
-                            <div class="progress-bar java">
-                            </div>
+                        <div class="badge">
+                            <img class="badge-image" src="./Images/java.svg" alt="Java">
+                            <div class="badge-title">Java</div>
+                        </div>
+                        <div class="badge">
+                            <img class="badge-image" src="./Images/python.png" alt="Python">
+                            <div class="badge-title">Python</div>
+                        </div>
+                        <div class="badge">
+                            <img class="badge-image" src="./Images/c.png" alt="C">
+                            <div class="badge-title">C</div>
+                        </div>
+                        <div class="badge">
+                            <img class="badge-image" src="./Images/html.png" alt="Html">
+                            <div class="badge-title">HTML</div>
+                        </div>
+                        <div class="badge">
+                            <img class="badge-image" src="./Images/css.png" alt="CSS">
+                            <div class="badge-title">CSS</div>
+                        </div>
+                        <div class="badge">
+                            <img class="badge-image" src="./Images/android.png" alt="Android">
+                            <div class="badge-title">Android Development</div>
+                        </div>
+                        <div class="badge">
+                            <img class="badge-image" src="./Images/flutter.png" alt="Flutter">
+                            <div class="badge-title">Flutter</div>
                         </div>
                     </div>
-
-                    <div class="skill-item">
-                        <h4 class="progress-title">Android Development</h4>
-                        <div class="progress">
-                            <div class="progress-bar android">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <h4 class="progress-title">C</h4>
-                        <div class="progress">
-                            <div class="progress-bar c">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <h4 class="progress-title">Python</h4>
-                        <div class="progress">
-                            <div class="progress-bar python">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <h4 class="progress-title">HTML</h4>
-                        <div class="progress">
-                            <div class="progress-bar html">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <h4 class="progress-title">CSS</h4>
-                        <div class="progress">
-                            <div class="progress-bar css">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item">
-                        <h4 class="progress-title">Flutter</h4>
-                        <div class="progress">
-                            <div class="progress-bar flutter">
-                            </div>
-                        </div>
-                    </div> -->
-
 
                 </div>
 
@@ -414,7 +345,7 @@
                     </div>
                 </div>
                 <div class="onlyform">
-                    <form method="post" action="./php/server.php" class="contact-form">
+                    <form method="post" class="contact-form">
                         <div class="form">
                             <div class="forhelp each-row">
                                 <h1>How may I help you?</h1>
@@ -428,11 +359,11 @@
                                 <input class="input-data" type="email" placeholder="name@example.com" name="email">
                             </div>
                             <div class="name each-row">
-                                <label for="name" class="nametext">Somthing you want to say</label><br>
+                                <label for="name" class="nametext">Something you want to say</label><br>
                                 <textarea class="input-data user-content" type="text"
-                                    placeholder="Somthing you want to say?" name="review"></textarea>
+                                    placeholder="Something you want to say?" name="review"></textarea>
                             </div>
-                            <div class="btn each-row">
+                            <div class="btn each-row" onclick="submit()">
                                 <button type="submit" name="submit">Submit</button>
                             </div>
                         </div>
@@ -444,16 +375,16 @@
 
         </section>
         <!-- Contact setion end -->
+
     </div>
 
     <script>
         var typed = new Typed("#skills", {
             strings: ["a Student", "an Android Developer", "Flutter Trainee", "a Front-End Developer"],
-            typedSpeed: 10,
+            typedSpeed: 100,
             backSpeed: 10,
             loop: true,
         });
-
 
     </script>
 </body>

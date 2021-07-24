@@ -180,14 +180,14 @@ footer{
     display: block;
     padding: 0.5vw 0 0 0;
 }
-.title{
+.info-title{
     color:#1261A0;
     text-decoration: #1261A0 underline;
     margin-top: 50px;
     font-size: 16px;
     font-weight: 900;
 }
-.title::after{
+.info-title::after{
     content: ":";
 }
 .value{
@@ -295,7 +295,7 @@ footer{
 }
 .resumetxt:hover{
     font-size: 1.55vw;
-    color: black;
+    cursor: pointer;
 }
 .resume-icon{
     font-size: 2vw;
@@ -334,8 +334,8 @@ footer{
     padding-left: 5vw;
     height: 5vw;
 }
-.heading h3{
-    text-shadow: 1px 1px 2px black;
+.title{
+    text-shadow: 2px 2px 2px black;
 }
 /* .progress-title{
     display: inline-block;
@@ -358,18 +358,28 @@ footer{
 
 .tech{
     padding-top: 2vw;
-    width: 60%;
+    width: 80%;
 }
 
 .badge{
-    display: inline-block;
-    color: white;
-    background-color: #1261A0;
+    display: inline-flex;
+    color: #1261A0;
+    background-color: white;
     font-size: 1vw;
     font-weight: 500;
     padding: 0.8vw;
     margin: 0.5vw;
     border-radius: 10rem;;
+}
+.badge-image{
+    height: 2.5vw;
+    width: 2.5vw;
+}
+.badge-title{
+    margin: auto;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-weight: 800;
 }
 
 .progress-bar{
@@ -448,6 +458,8 @@ section#contact{
     font-weight: 700;
 }
 .input-data{
+    font-weight: 800;
+    resize: none;
     font-size: 1vw;
     color: black;
     margin-top: 0.3vw;
@@ -560,6 +572,7 @@ section#contact{
      .nav-list i{
          font-size: 2vw;
          padding-left: 6vw;
+         font-weight: 600;
      }
      section#home, section#about, section#resume, section#contact{
          padding-left: 25vw;
