@@ -610,7 +610,7 @@ section#contact{
     .list-item{
         line-height: 2.5vw;
     } 
-    .title, .value{
+    .info-title, .value{
         font-size: 2vw;
     }    
     .resume-upperpage{
